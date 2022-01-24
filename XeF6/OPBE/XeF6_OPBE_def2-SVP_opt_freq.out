@@ -1,0 +1,631 @@
+ argument  1 = XeF6_OPBE_def2-SVP_opt_freq.nw
+
+
+
+============================== echo of input deck ==============================
+ECHO
+
+start molecule
+
+#MEMORY
+memory 3584 mb
+
+#TITLE
+title "XeF6"
+
+charge 0
+
+#GEOMETRY
+geometry units angstroms print xyz autosym
+Xe                -0.00000000    0.00000000    0.00000000
+F                  0.00000000    0.00000000    2.67000000
+F                  0.00000000   -2.67000000   -0.00000000
+F                 -0.00000000    0.00000000   -2.67000000
+F                  0.00000000    2.67000000    0.00000000
+F                 -2.67000000    0.00000000    0.00000000
+F                  2.67000000    0.00000000   -0.00000000
+end
+
+#BASIS
+basis "ao basis" spherical print
+#BASIS SET: (7s,4p,1d) -> [3s,2p,1d]
+F    S
+   2894.8325990             -0.53408255515E-02
+    435.41939120            -0.39904258866E-01
+     98.843328866           -0.17912768038
+     27.485198001           -0.46758090825
+      8.5405498171          -0.44653131020
+F    S
+      1.0654578038           1.0000000
+F    S
+      0.33247346748          1.0000000
+F    P
+     22.696633924           -0.45212874436E-01
+      4.9872339257          -0.23754317067
+      1.3491613954          -0.51287353587
+F    P
+      0.34829881977          1.0000000
+F    D
+      1.4000000              1.0000000
+#BASIS SET: (11s,10p,8d,2f) -> [6s,5p,3d,2f]
+Xe    S
+   6420.2481656              0.25092173886E-03
+    983.54530664             0.16251948178E-02
+    219.43881364             0.46037106451E-02
+     23.012587807           -0.14698707182
+     18.048324490            0.57524870348
+Xe    S
+     11.752550163            0.66038420156
+      6.2390917199           0.38470524721
+Xe    S
+      2.6257211320           1.0000000
+Xe    S
+      1.2905042943           1.0000000
+Xe    S
+      0.36204185060          1.0000000
+Xe    S
+      0.14069888091          1.0000000
+Xe    P
+     13.960683826           -0.50950157807E-01
+      4.0928947097           0.36669211800
+      2.2546815460           0.72619456861
+      1.1546596184           0.35555871740
+Xe    P
+    193.81432545             0.95394802497E-03
+     21.725228086            0.57393353332E-01
+      9.8891605641          -0.27974266640
+Xe    P
+      0.52321923128          1.0000000
+Xe    P
+      0.21945569800          1.0000000
+Xe    P
+      0.86158996836E-01      1.0000000
+Xe    D
+    135.60300038             0.81873543290E-03
+     38.727062692            0.60897654151E-02
+     15.377328089           -0.92782985596E-02
+      5.2602537686           0.22890785589
+      2.6590627424           0.44434407051
+      1.2938205124           0.36029482992
+Xe    D
+      0.58050830139          1.0000000
+Xe    D
+      0.18000000000          1.0000000
+Xe    F
+      2.5000000              1.0000000
+Xe    F
+      0.49652793             1.0000000
+end
+
+ECP
+Xe nelec 28
+Xe ul
+2      20.88155700           -23.08929500
+2      20.78344300           -30.07447500
+2       5.25338900            -0.28822700
+2       5.36118800            -0.38692400
+Xe S
+2      40.00518400            49.99796200
+2      17.81221400           281.01330300
+2       9.30415000            61.53825500
+2      20.88155700            23.08929500
+2      20.78344300            30.07447500
+2       5.25338900             0.28822700
+2       5.36118800             0.38692400
+Xe P
+2      15.70177200            67.43914200
+2      15.25860800           134.87471100
+2       9.29218400            14.66330000
+2       8.55900300            29.35473000
+2      20.88155700            23.08929500
+2      20.78344300            30.07447500
+2       5.25338900             0.28822700
+2       5.36118800             0.38692400
+Xe D
+2      15.18560000            35.43690800
+2      14.28450000            53.19577200
+2       7.12188900             9.04623200
+2       6.99196300            13.22368100
+2       0.62394600             0.08485300
+2       0.64728400             0.04415500
+2      20.88155700            23.08929500
+2      20.78344300            30.07447500
+2       5.25338900             0.28822700
+2       5.36118800             0.38692400
+end
+
+#DFT
+dft
+  grid medium
+  convergence energy 1e-07
+  mult 1
+  iterations 30
+  xc optx6 cpbe96
+end
+
+#OPT
+driver
+  default
+  maxiter 100
+end
+
+set driver:linopt 0
+
+#TASK
+task dft optimize
+task dft freq numerical
+
+================================================================================
+
+
+                                         
+                                         
+
+
+             Northwest Computational Chemistry Package (NWChem) 7.0.2
+             --------------------------------------------------------
+
+
+                    Environmental Molecular Sciences Laboratory
+                       Pacific Northwest National Laboratory
+                                Richland, WA 99352
+
+                              Copyright (c) 1994-2020
+                       Pacific Northwest National Laboratory
+                            Battelle Memorial Institute
+
+             NWChem is an open-source computational chemistry package
+                        distributed under the terms of the
+                      Educational Community License (ECL) 2.0
+             A copy of the license is included with this distribution
+                              in the LICENSE.TXT file
+
+                                  ACKNOWLEDGMENT
+                                  --------------
+
+            This software and its documentation were developed at the
+            EMSL at Pacific Northwest National Laboratory, a multiprogram
+            national laboratory, operated for the U.S. Department of Energy
+            by Battelle under Contract Number DE-AC05-76RL01830. Support
+            for this work was provided by the Department of Energy Office
+            of Biological and Environmental Research, Office of Basic
+            Energy Sciences, and the Office of Advanced Scientific Computing.
+
+
+           Job information
+           ---------------
+
+    hostname        = florincy-Aspire-A515-51
+    program         = /scr/programas/nwchem-7.0.2/bin/LINUX64/nwchem
+    date            = Thu Dec  9 00:45:59 2021
+
+    compiled        = Qua_Nov_10_20:21:41_2021
+    source          = /scr/programas/nwchem-7.0.2
+    nwchem branch   = 7.0.2
+    nwchem revision = b9985dfa
+    ga revision     = 5.7.2
+    use scalapack   = F
+    input           = XeF6_OPBE_def2-SVP_opt_freq.nw
+    prefix          = molecule.
+    data base       = ./molecule.db
+    status          = startup
+    nproc           =        2
+    time left       =     -1s
+
+
+
+           Memory information
+           ------------------
+
+    heap     =  117440512 doubles =    896.0 Mbytes
+    stack    =  117440509 doubles =    896.0 Mbytes
+    global   =  234881024 doubles =   1792.0 Mbytes (distinct from heap & stack)
+    total    =  469762045 doubles =   3584.0 Mbytes
+    verify   = yes
+    hardfail = no 
+
+
+           Directory information
+           ---------------------
+
+  0 permanent = .
+  0 scratch   = .
+
+
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+                                       XeF6
+                                       ----
+
+ Scaling coordinates for geometry "geometry" by  1.889725989
+ (inverse scale =  0.529177249)
+
+ OH  symmetry detected
+
+          ------
+          auto-z
+          ------
+     1 autoz failed with cvr_scaling = 1.2 changing to 1.3
+     2 autoz failed with cvr_scaling = 1.3 changing to 1.4
+  Looking for out-of-plane bends
+  no constraints, skipping    0.0000000000000000     
+  no constraints, skipping    0.0000000000000000     
+
+
+                             Geometry "geometry" -> ""
+                             -------------------------
+
+ Output coordinates in angstroms (scale by  1.889725989 to convert to a.u.)
+
+  No.       Tag          Charge          X              Y              Z
+ ---- ---------------- ---------- -------------- -------------- --------------
+    1 Xe                  54.0000     0.00000000     0.00000000     0.00000000
+    2 F                    9.0000     0.00000000     2.67000000     0.00000000
+    3 F                    9.0000    -2.67000000     0.00000000     0.00000000
+    4 F                    9.0000     0.00000000    -2.67000000     0.00000000
+    5 F                    9.0000     2.67000000     0.00000000     0.00000000
+    6 F                    9.0000     0.00000000     0.00000000    -2.67000000
+    7 F                    9.0000     0.00000000     0.00000000     2.67000000
+
+      Atomic Mass 
+      ----------- 
+
+      Xe               131.904200
+      F                 18.998400
+
+
+ Effective nuclear repulsion energy (a.u.)     738.2335356029
+
+            Nuclear Dipole moment (a.u.) 
+            ----------------------------
+        X                 Y               Z
+ ---------------- ---------------- ----------------
+     0.0000000000     0.0000000000     0.0000000000
+
+      Symmetry information
+      --------------------
+
+ Group name              Oh       
+ Group number             44
+ Group order              48
+ No. of unique centers     2
+
+      Symmetry unique atoms
+
+     1    2
+
+
+
+                                Z-matrix (autoz)
+                                -------- 
+
+ Units are Angstrom for bonds and degrees for angles
+
+      Type          Name      I     J     K     L     M      Value
+      ----------- --------  ----- ----- ----- ----- ----- ----------
+    1 Stretch                  1     2                       2.67000
+    2 Stretch                  1     3                       2.67000
+    3 Stretch                  1     4                       2.67000
+    4 Stretch                  1     5                       2.67000
+    5 Stretch                  1     6                       2.67000
+    6 Stretch                  1     7                       2.67000
+    7 Bend                     2     1     3                90.00000
+    8 Bend                     2     1     5                90.00000
+    9 Bend                     2     1     6                90.00000
+   10 Bend                     2     1     7                90.00000
+   11 Bend                     3     1     4                90.00000
+   12 Bend                     3     1     6                90.00000
+   13 Bend                     3     1     7                90.00000
+   14 Bend                     4     1     5                90.00000
+   15 Bend                     4     1     6                90.00000
+   16 Bend                     4     1     7                90.00000
+   17 Bend                     5     1     6                90.00000
+   18 Bend                     5     1     7                90.00000
+
+
+            XYZ format geometry
+            -------------------
+     7
+ geometry
+ Xe                    0.00000000     0.00000000     0.00000000
+ F                     0.00000000     2.67000000     0.00000000
+ F                    -2.67000000     0.00000000     0.00000000
+ F                     0.00000000    -2.67000000     0.00000000
+ F                     2.67000000     0.00000000     0.00000000
+ F                     0.00000000     0.00000000    -2.67000000
+ F                     0.00000000     0.00000000     2.67000000
+
+                      Basis "ao basis" -> "" (spherical)
+                      -----
+  F (Fluorine)
+  ------------
+            Exponent  Coefficients 
+       -------------- ---------------------------------------------------------
+  1 S  2.89483260E+03 -0.005341
+  1 S  4.35419391E+02 -0.039904
+  1 S  9.88433289E+01 -0.179128
+  1 S  2.74851980E+01 -0.467581
+  1 S  8.54054982E+00 -0.446531
+
+  2 S  1.06545780E+00  1.000000
+
+  3 S  3.32473467E-01  1.000000
+
+  4 P  2.26966339E+01 -0.045213
+  4 P  4.98723393E+00 -0.237543
+  4 P  1.34916140E+00 -0.512874
+
+  5 P  3.48298820E-01  1.000000
+
+  6 D  1.40000000E+00  1.000000
+
+  Xe (Xenon)
+  ----------
+            Exponent  Coefficients 
+       -------------- ---------------------------------------------------------
+  1 S  6.42024817E+03  0.000251
+  1 S  9.83545307E+02  0.001625
+  1 S  2.19438814E+02  0.004604
+  1 S  2.30125878E+01 -0.146987
+  1 S  1.80483245E+01  0.575249
+
+  2 S  1.17525502E+01  0.660384
+  2 S  6.23909172E+00  0.384705
+
+  3 S  2.62572113E+00  1.000000
+
+  4 S  1.29050429E+00  1.000000
+
+  5 S  3.62041851E-01  1.000000
+
+  6 S  1.40698881E-01  1.000000
+
+  7 P  1.39606838E+01 -0.050950
+  7 P  4.09289471E+00  0.366692
+  7 P  2.25468155E+00  0.726195
+  7 P  1.15465962E+00  0.355559
+
+  8 P  1.93814325E+02  0.000954
+  8 P  2.17252281E+01  0.057393
+  8 P  9.88916056E+00 -0.279743
+
+  9 P  5.23219231E-01  1.000000
+
+ 10 P  2.19455698E-01  1.000000
+
+ 11 P  8.61589968E-02  1.000000
+
+ 12 D  1.35603000E+02  0.000819
+ 12 D  3.87270627E+01  0.006090
+ 12 D  1.53773281E+01 -0.009278
+ 12 D  5.26025377E+00  0.228908
+ 12 D  2.65906274E+00  0.444344
+ 12 D  1.29382051E+00  0.360295
+
+ 13 D  5.80508301E-01  1.000000
+
+ 14 D  1.80000000E-01  1.000000
+
+ 15 F  2.50000000E+00  1.000000
+
+ 16 F  4.96527930E-01  1.000000
+
+
+
+ Summary of "ao basis" -> "" (spherical)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ F                       user specified              6       14   3s2p1d
+ Xe                      user specified             16       50   6s5p3d2f
+
+
+                 ECP       "ecp basis" -> "" (cartesian)
+                -----
+  Xe (Xenon) Replaces    28 electrons
+  -----------------------------------
+             Channel    R-exponent     Exponent     Coefficients
+         ------------ ---------------------------------------------------------
+  1 U L       Both         2.00       20.881557     -23.089295
+  1 U L       Both         2.00       20.783443     -30.074475
+  1 U L       Both         2.00        5.253389      -0.288227
+  1 U L       Both         2.00        5.361188      -0.386924
+
+  2 U-s       Both         2.00       40.005184      49.997962
+  2 U-s       Both         2.00       17.812214     281.013303
+  2 U-s       Both         2.00        9.304150      61.538255
+  2 U-s       Both         2.00       20.881557      23.089295
+  2 U-s       Both         2.00       20.783443      30.074475
+  2 U-s       Both         2.00        5.253389       0.288227
+  2 U-s       Both         2.00        5.361188       0.386924
+
+  3 U-p       Both         2.00       15.701772      67.439142
+  3 U-p       Both         2.00       15.258608     134.874711
+  3 U-p       Both         2.00        9.292184      14.663300
+  3 U-p       Both         2.00        8.559003      29.354730
+  3 U-p       Both         2.00       20.881557      23.089295
+  3 U-p       Both         2.00       20.783443      30.074475
+  3 U-p       Both         2.00        5.253389       0.288227
+  3 U-p       Both         2.00        5.361188       0.386924
+
+  4 U-d       Both         2.00       15.185600      35.436908
+  4 U-d       Both         2.00       14.284500      53.195772
+  4 U-d       Both         2.00        7.121889       9.046232
+  4 U-d       Both         2.00        6.991963      13.223681
+  4 U-d       Both         2.00        0.623946       0.084853
+  4 U-d       Both         2.00        0.647284       0.044155
+  4 U-d       Both         2.00       20.881557      23.089295
+  4 U-d       Both         2.00       20.783443      30.074475
+  4 U-d       Both         2.00        5.253389       0.288227
+  4 U-d       Both         2.00        5.361188       0.386924
+
+
+ xc [acm],
+ [b3lyp     ],
+ [beckehandh],
+ [HFexch    ],
+ [becke88   ],
+ [lyp       ],
+ [perdew81  ],
+ [perdew86  ],
+ [perdew91  ],
+ [pw91lda   ],
+ [slater    ],
+ [vwn_1     ],
+ [vwn_2     ],
+ [vwn_3     ],
+ [vwn_4     ],
+ [vwn_5     ],
+ [vwn_1_rpa ],
+ [hcth      ],
+ [becke97   ],
+ [becke97-1 ],
+ [cpbe96    ],
+ [xpbe96    ],
+ [gill96    ],
+ [xperdew91 ],
+ [xhcth     ],
+ [xbecke97  ],
+ [xbecke97-1],
+ [chcth     ],
+ [cbecke97  ],
+ [cbecke97-1],
+ [hcth120   ],
+ [hcth147   ],
+ [becke98   ],
+ [pbe0      ],
+ [becke97gga],
+ [hcth407   ],
+ [hcthp14   ],
+ [optx      ],
+ [optc      ],
+ [becke97-2 ],
+ [mpw91     ],
+ [ft97      ],
+ [xft97     ],
+ [cft97     ],
+ [xpkzb99   ],
+ [mpw1k     ],
+ [cpkzb99   ],
+ [hcth407p  ],
+ [xtpss03   ],
+ [ctpss03   ],
+ [xctpssh   ],
+ [becke97-3 ],
+ [op        ],
+ [bop       ],
+ [pbeop     ],
+ [rpbe      ],
+ [revpbe    ],
+ [bc95      ],
+ [mpw1b95   ],
+ [mpwb1k    ],
+ [b1b95     ],
+ [bb1k      ],
+ [pw6b95    ],
+ [pwb6k     ],
+ [m05       ],
+ [m05-2x    ],
+ [xpw6b95   ],
+ [cpw6b95   ],
+ [xpwb6k    ],
+ [cpwb6k    ],
+ [xm05      ],
+ [cm05      ],
+ [xm05-2x   ],
+ [cm05-2x   ],
+ [vs98      ],
+ [xvs98     ],
+ [cvs98     ],
+ [m06-L     ],
+ [xm06-L    ],
+ [cm06-L    ],
+ [m06-hf    ],
+ [xm06-hf   ],
+ [cm06-hf   ],
+ [m06       ],
+ [revm06    ],
+ [revm06-L  ],
+ [xm06      ],
+ [cm06      ],
+ [m06-2x    ],
+ [xm06-2x   ],
+ [cm06-2x   ],
+ [m08-hx    ],
+ [xm08-hx   ],
+ [cm08-hx   ],
+ [m08-so    ],
+ [xm08-so   ],
+ [cm08-so   ],
+ [m11       ],
+ [xm11      ],
+ [cm11      ],
+ [m11-l     ],
+ [xm11-l    ],
+ [cm11-l    ],
+ [sogga     ],
+ [xsogga    ],
+ [csogga    ],
+ [sogga11   ],
+ [xsogga11  ],
+ [csogga11  ],
+ [sogga11-x ],
+ [xsogga11-x],
+ [csogga11-x],
+ [n12       ],
+ [xn12      ],
+ [cn12      ],
+ [cn12-sx   ],
+ [xbnl07    ],
+ [becke97-d ],
+ [xcamb88   ],
+ [xcampbe96 ],
+ [mp2       ],
+ [b2plyp    ],
+ [xcamlsd   ],
+ [xwpbe     ],
+ [ssb-d     ],
+ [kt1       ],
+ [kt2       ],
+ [bhlyp     ],
+ [b3p86     ],
+ [b3pw91    ],
+ [pbe96     ],
+ [dldf      ],
+ [srhfexch  ],
+ [hse03     ],
+ [s12g      ],
+ [s12h      ],
+ [cam-s12g  ],
+ [cam-s12h  ],
+ [becke86b  ],
+ [xperdew86 ],
+ [xmvs15    ],
+ [cvpbe09   ],
+ [mvs       ],
+ [hle16     ],
+ [scan      ],
+ [scanl     ],
+ [scan0     ],
+ [lb94      ],
+ [rscan     ],
+ [xncap     ],
+ [ncap      ],
+ ------------------------------------------------------------------------
+ xc_input: invalid format                   0
+ ------------------------------------------------------------------------
+ ------------------------------------------------------------------------
+  current input line : 
+   138:   xc optx6 cpbe96
+ ------------------------------------------------------------------------
+ ------------------------------------------------------------------------
+ There is an error in the input file
+ ------------------------------------------------------------------------
+ For more information see the NWChem manual at https://github.com/nwchemgit/nwchem/wiki
+
+
+ For further details see manual section:                                                                                                                                                                                                                                                                

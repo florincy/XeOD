@@ -29,7 +29,7 @@ int main()
         printf("\n%s", caminho);
         //Open the copy and past files
         arq = fopen(caminho, "r");
-        arqf = fopen("/home/florincy/Documentos/nwchem/FrequenciaXeF2.txt", "a");
+        arqf = fopen("/home/florincy/Documentos/nwchem/XeF2/FrequenciaXeF2.txt", "a");
         if (!arq)
         {
             printf("Problemas na CRIACAO do arquivo\n");

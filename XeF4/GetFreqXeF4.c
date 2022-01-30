@@ -15,9 +15,9 @@ int main()
     for (int i2 = 0; i2 < 32; i2++)
     {
         //Path by parts
-        char caminho[100] = "/home/florincy/Documentos/nwchem/XeF2/";
+        char caminho[100] = "/home/florincy/Documentos/nwchem/XeF4/";
         //Patern for naming files
-        char arquivoout1[100] = "/XeF2_";
+        char arquivoout1[100] = "/XeF4_";
         char arquivoout2[100] = "_def2-SVP_opt_freq.out";
         printf("\nfoi!\n");
         strcpy(metodo, v[i2]);
@@ -29,7 +29,7 @@ int main()
         printf("\n%s", caminho);
         //Open the copy and past files
         arq = fopen(caminho, "r");
-        arqf = fopen("/home/florincy/Documentos/nwchem/FrequenciaXeF2.txt", "a");
+        arqf = fopen("/home/florincy/Documentos/nwchem/XeF4/FrequenciaXeF4.txt", "a");
         if (!arq)
         {
             printf("Problemas na CRIACAO do arquivo\n");

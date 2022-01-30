@@ -52,9 +52,9 @@ int main()
             
             result = fgets(Linha, 100, arq);
             if (result){
-            v1 = strstr(result, "Atom information");
+            v1 = strstr(result, "Optimization converged");
             if (v1){
-                a = i;
+                a = i + 15;
                 a1= a + 6;
 
             }

@@ -137,16 +137,16 @@ end
 #DFT
 dft
   grid medium
-  convergence energy 1e-07
+  convergence energy 1e-06
   mult 1
-  iterations 30
+  iterations 50
   xc tpssh
 end
 
 #OPT
 driver
-  default
-  maxiter 100
+  loose
+  maxiter 300
 end
 
 set driver:linopt 0
@@ -197,9 +197,9 @@ task dft freq numerical
 
     hostname        = florincy-Aspire-A515-51
     program         = /scr/programas/nwchem-7.0.2/bin/LINUX64/nwchem
-    date            = Fri Feb  4 18:15:34 2022
+    date            = Wed Feb  9 15:27:05 2022
 
-    compiled        = Qua_Nov_10_20:21:41_2021
+    compiled        = Ter_Fev_08_03:52:15_2022
     source          = /scr/programas/nwchem-7.0.2
     nwchem branch   = 7.0.2
     nwchem revision = b9985dfa
@@ -217,10 +217,10 @@ task dft freq numerical
            Memory information
            ------------------
 
-    heap     =   16646140 doubles =    127.0 Mbytes
-    stack    =  335675393 doubles =   2561.0 Mbytes
+    heap     =   16646138 doubles =    127.0 Mbytes
+    stack    =  335675391 doubles =   2561.0 Mbytes
     global   =  150994944 doubles =   1152.0 Mbytes (distinct from heap & stack)
-    total    =  503316477 doubles =   3840.0 Mbytes
+    total    =  503316473 doubles =   3840.0 Mbytes
     verify   = yes
     hardfail = yes
 

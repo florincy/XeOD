@@ -132,16 +132,16 @@ end
 #DFT
 dft
   grid medium
-  convergence energy 1e-07
+  convergence energy 1e-06
   mult 1
-  iterations 30
+  iterations 50
   xc m06
 end
 
 #OPT
 driver
   default
-  maxiter 100
+  maxiter 200
 end
 
 set driver:linopt 0

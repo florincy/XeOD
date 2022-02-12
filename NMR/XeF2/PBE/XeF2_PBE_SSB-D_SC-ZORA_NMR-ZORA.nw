@@ -13,9 +13,7 @@ charge 0
 #GEOMETRY
 geometry units angstroms print xyz autosym
 Xe                       0.00000000     0.00000000     0.00000000
-
 F                        0.00000000     0.00000000    -2.01485110
-
 F                        0.00000000     0.00000000     2.01485110
 end
 

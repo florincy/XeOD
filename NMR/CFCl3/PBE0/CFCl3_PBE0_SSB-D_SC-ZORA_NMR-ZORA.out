@@ -1,0 +1,16 @@
+ argument  1 = /home/florincy/Documentos/nwchem/NMR/CFCl3/PBE0/CFCl3_PBE0_SSB-D_SC-ZORA_NMR-ZORA.nw
+  Unable to open /home/florincy/Documentos/nwchem/NMR/CFCl3/PBE0/CFCl3_PBE0_SSB-D_SC-ZORA_NMR-ZORA.nw --- appending .nw
+ ------------------------------------------------------------------------
+ nwchem: failed to open the input file                   0
+ ------------------------------------------------------------------------
+ ------------------------------------------------------------------------
+  current input line : 
+     0: 
+ ------------------------------------------------------------------------
+ ------------------------------------------------------------------------
+ There is an error in the input file
+ ------------------------------------------------------------------------
+ For more information see the NWChem manual at https://github.com/nwchemgit/nwchem/wiki
+
+
+ For further details see manual section:                                                                                                                                                                                                                                                                

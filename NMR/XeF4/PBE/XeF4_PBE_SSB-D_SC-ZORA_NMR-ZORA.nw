@@ -6,18 +6,18 @@ start molecule
 memory stack 3333 mb heap 167 mb global 1500 mb verify hardfail
 
 #TITLE
-title "XeF2"
+title "XeF4"
 
 charge 0
 
 #GEOMETRY
 geometry units angstroms print xyz autosym
-Xe                    0.00000000     0.00000000     0.00000000
-F                    -0.00486955    -1.97778521     0.00000000
-F                     0.00486955     1.97778521     0.00000000
-F                     1.97778521    -0.00486955     0.00000000
-F                    -1.97778521     0.00486955     0.00000000
-
+Xe                       0.00000000     0.00000000     0.00000000
+F                       -0.00486955    -1.97778521     0.00000000
+F                        0.00486955     1.97778521     0.00000000
+F                        1.97778521    -0.00486955     0.00000000
+F                       -1.97778521     0.00486955     0.00000000
+end
 #BASIS
 basis "ao basis" spherical print
 #BASIS SET: (11s,6p,2d) -> [6s,3p,2d]
@@ -150,7 +150,7 @@ end
 dft
  odft
  mult 1
- iterations 150
+ iterations 200
  xc ssb-d
  grid medium
  convergence lshift 0. ncydp 0 dampon 1d99 dampoff 1d-4 damp 40

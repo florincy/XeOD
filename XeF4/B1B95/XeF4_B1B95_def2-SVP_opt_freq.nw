@@ -133,7 +133,7 @@ dft
   convergence energy 1e-07
   mult 1
   iterations 30
-  xc xpbe96 cpbe96
+  xc b1b95
 end
 
 #OPT

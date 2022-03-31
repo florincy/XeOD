@@ -23,7 +23,6 @@ for i in ${!Methods[@]}; do
   echo $OutputNWCHEM
   cd ${directory2}
   ls
-  
   mpirun -np 2 /scr/programas/nwchem-7.0.2/bin/LINUX64/nwchem ${inputNWCHEM} > ${OutputNWCHEM}
   wait
 done

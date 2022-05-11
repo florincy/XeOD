@@ -1,0 +1,112 @@
+
+...LRC-wPBEh...
+           isotropic =    5657.6335
+
+
+...LC-wPBE...
+           isotropic =      92.8121
+
+
+...LC-PBE...
+           isotropic =     101.2642
+
+
+...LC-BLYP...
+           isotropic =      78.9286
+
+
+...CAM-B3LYP...
+           isotropic =      39.4039
+
+
+...M11...
+           isotropic =      13.2095
+
+
+...PW6B95...
+           isotropic =      20.1631
+
+
+...mPW1B95...
+           isotropic =      47.7291
+
+
+...mPWB1K...
+           isotropic =     108.5668
+
+
+...BB1K...
+
+...M06-HF...
+           isotropic =     140.7874
+
+
+...M06-2X...
+           isotropic =      69.5718
+
+
+...M06...
+           isotropic =      29.1557
+
+
+...SOGGA11-X...
+           isotropic =      38.9037
+
+
+...BHandH...
+           isotropic =     106.5001
+
+
+...BHandHLYP...
+           isotropic =     213.8628
+
+
+...mPW1K...
+           isotropic =      96.5353
+
+
+...B3LYP...
+           isotropic =     -56.0550
+
+
+...PBE0...
+           isotropic =      14.8570
+
+
+...M11-L...
+           isotropic =     146.5013
+
+
+...M06-L...
+           isotropic =    -105.3894
+
+
+...TPSS...
+           isotropic =    -117.5299
+
+
+...revPBE...
+           isotropic =    -399.6162
+
+
+...mPW91...
+           isotropic =    -139.5696
+
+
+...PW91...
+           isotropic =    -127.9858
+
+
+...OLYP...
+           isotropic =    -128.5715
+
+
+...BP86...
+
+...BLYP...
+           isotropic =    -200.9186
+
+
+...PBE...
+           isotropic =    -134.7448
+

@@ -1,0 +1,40 @@
+
+...M11-L...
+           isotropic =    2342.0476
+
+
+...M06-L...
+           isotropic =    2297.1585
+
+
+...TPSS...
+           isotropic =    2296.3555
+
+
+...revPBE...
+           isotropic =    2270.6467
+
+
+...mPW91...
+           isotropic =    2293.2907
+
+
+...PW91...
+           isotropic =    2294.9227
+
+
+...OLYP...
+           isotropic =    2294.6083
+
+
+...BP86...
+           isotropic =    2292.5049
+
+
+...BLYP...
+           isotropic =    2284.7323
+
+
+...PBE...
+           isotropic =    2294.0099
+

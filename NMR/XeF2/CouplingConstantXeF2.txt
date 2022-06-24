@@ -1,0 +1,102 @@
+
+...PBE0...
+
+...M11-L...
+      Atom    1: 129-Xe and Atom    2:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7701.8768 Hz
+
+      Atom    1: 129-Xe and Atom    3:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -6973.3131 Hz
+
+
+...M06-L...
+      Atom    1: 129-Xe and Atom    2:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7966.7146 Hz
+
+      Atom    1: 129-Xe and Atom    3:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7467.8446 Hz
+
+
+...TPSS...
+      Atom    1: 129-Xe and Atom    2:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7973.0662 Hz
+
+      Atom    1: 129-Xe and Atom    3:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7478.6139 Hz
+
+
+...revPBE...
+      Atom    1: 129-Xe and Atom    2:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -8389.1386 Hz
+
+      Atom    1: 129-Xe and Atom    3:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -8090.2345 Hz
+
+
+...mPW91...
+      Atom    1: 129-Xe and Atom    2:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7998.3753 Hz
+
+      Atom    1: 129-Xe and Atom    3:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7521.0391 Hz
+
+
+...PW91...
+      Atom    1: 129-Xe and Atom    2:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7984.6731 Hz
+
+      Atom    1: 129-Xe and Atom    3:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7498.1732 Hz
+
+
+...OLYP...
+      Atom    1: 129-Xe and Atom    2:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7987.2718 Hz
+
+      Atom    1: 129-Xe and Atom    3:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7502.5282 Hz
+
+
+...BP86...
+      Atom    1: 129-Xe and Atom    2:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -8005.1687 Hz
+
+      Atom    1: 129-Xe and Atom    3:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7532.2922 Hz
+
+
+...BLYP...
+      Atom    1: 129-Xe and Atom    2:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -8081.4789 Hz
+
+      Atom    1: 129-Xe and Atom    3:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7654.9159 Hz
+
+
+...PBE...
+      Atom    1: 129-Xe and Atom    2:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7992.2710 Hz
+
+      Atom    1: 129-Xe and Atom    3:  19-F 
+
+      Isotropic Spin-Spin Coupling =   -7510.8806 Hz
+

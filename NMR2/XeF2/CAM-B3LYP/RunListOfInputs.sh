@@ -4,11 +4,11 @@ echo "Lets start some calculations?"
 read -p "Molecule formula : " molecule
 read -p "Is it NMR?(Y/N)" Anwser
 if [ "$Anwser" = "Y" ]; then
-  directory="/home/florincy/Documentos/nwchem/NMR2/${molecule}/CAM-B3LYP/"
+  directory="/home/nqtcm/simone/nwchem/NMR2/${molecule}/CAM-B3LYP/"
   StandardNomenclatureIn="_SC-ZORA_NMR-ZORA.nw"
   StandardNomenclatureOut="_SC-ZORA_NMR-ZORA.out"
 else
-  directory="/home/florincy/Documentos/nwchem/${molecule}/"
+  directory="/home/nqtcm/simone/nwchem/${molecule}/"
   StandardNomenclatureIn="_def2-SVP_opt_freq.nw"
   StandardNomenclatureOut="_def2-SVP_opt_freq.out"
 fi
